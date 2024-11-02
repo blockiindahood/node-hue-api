@@ -99,7 +99,7 @@ export class Lights extends ApiDefinition {
    * Renames a Light on the Bridge to the specified name in the Light instance.
    */
   renameLight(light: LightsType): Promise<boolean> {
-    return this.execute(lightsApi.setLightAttributes, {id: light.id, light: light});
+    return this.execute(lightsApi.setLightAttributes, {id: light, light: light});
   }
 
   // /**
